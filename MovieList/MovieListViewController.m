@@ -43,6 +43,21 @@
         [_movies addObject:movie];
         [self updateUI];
     }
+    else{
+        NSString *title =@"Informacoes invalidadas";
+        NSString *msg =@"Digite os coisa campos corretamentes";
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title  message:msg preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleDefault  handler:^(UIAlertAction * _Nonnull action) {
+            //NSLog(@"errou manow");
+            [_movieNameTextField becomeFirstResponder];
+        }];
+        [alertController addAction:action];
+        [self presentViewController:alertController
+                           animated:YES
+                         completion:nil];
+         
+    }
+
 }
 
 - (void) updateUI{
