@@ -14,6 +14,7 @@
 		933A69551CB970E1005A3306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933A69531CB970E1005A3306 /* LaunchScreen.storyboard */; };
 		933A69601CB970E1005A3306 /* MovieListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 933A695F1CB970E1005A3306 /* MovieListTests.m */; };
 		933A696B1CB970E1005A3306 /* MovieListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 933A696A1CB970E1005A3306 /* MovieListUITests.m */; };
+		933A697A1CB97920005A3306 /* MovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933A69791CB97920005A3306 /* MovieListViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		933A69661CB970E1005A3306 /* MovieListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		933A696A1CB970E1005A3306 /* MovieListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieListUITests.m; sourceTree = "<group>"; };
 		933A696C1CB970E1005A3306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		933A69781CB97920005A3306 /* MovieListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListViewController.h; sourceTree = "<group>"; };
+		933A69791CB97920005A3306 /* MovieListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 		933A69441CB970E1005A3306 /* MovieList */ = {
 			isa = PBXGroup;
 			children = (
+				933A69781CB97920005A3306 /* MovieListViewController.h */,
+				933A69791CB97920005A3306 /* MovieListViewController.m */,
 				933A69481CB970E1005A3306 /* AppDelegate.h */,
 				933A69491CB970E1005A3306 /* AppDelegate.m */,
 				933A694E1CB970E1005A3306 /* Main.storyboard */,
@@ -266,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				933A694A1CB970E1005A3306 /* AppDelegate.m in Sources */,
+				933A697A1CB97920005A3306 /* MovieListViewController.m in Sources */,
 				933A69471CB970E1005A3306 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
