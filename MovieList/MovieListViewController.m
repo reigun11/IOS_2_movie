@@ -29,9 +29,9 @@
     // verificar as informaçÕes
     
     if (movieName != nil &&
-        [movieName isEqualToString: @""] &&
+        ![movieName isEqualToString: @""] &&
         yearString !=nil &&
-        [yearString isEqualToString:@""]) {
+        ![yearString isEqualToString:@""]) {
         
         // criando o objeto movie
         NSInteger year = [yearString integerValue];
@@ -41,9 +41,21 @@
         
         // adicionar no array
         [_movies addObject:movie];
+        [self updateUI];
     }
 }
 
+- (void) updateUI{
+    NSString *outputString = @"";
+    for (Movie *movie in _movies) {
+        NSString *stringRepresentation =
+        [NSString stringWithFormat:@"%@\n", [movie stringRepresentation]];
 
+       outputString = [outputString stringByAppendingString:stringRepresentation];
+        
+    }
+    _movieListLabel.text = outputString;
+    
+}
 
 @end
