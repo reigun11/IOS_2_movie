@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface MovieListViewController : UIViewController
+@interface MovieListViewController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *movieListLabel;
 

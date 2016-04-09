@@ -20,6 +20,8 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    _movieNameTextField.delegate = self;
+    _yearTextField.delegate = self;
     _movies = [[NSMutableArray alloc] init];
 }
 
@@ -71,6 +73,14 @@
     }
     _movieListLabel.text = outputString;
     
+}
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    if ([textField isEqual:_movieNameTextField]) {
+        [_yearTextField becomeFirstResponder];
+    }else{
+        [self save:nil];
+    } return YES;
 }
 
 @end
