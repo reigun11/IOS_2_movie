@@ -11,7 +11,7 @@
 @implementation Movie
 
 -(NSString *)stringRepresentation{
-    NSString *representation = [NSString stringWithFormat:@"🎥 %@ (%li)", _title, _year];
+    NSString *representation = [NSString stringWithFormat:@"🎥 %@ (%li)", _title, (long)_year];
     return representation;
 };
 
